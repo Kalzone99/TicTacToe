@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ff1515;
+}
+body {
+  font-family: "Trade Winds", sans-serif;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url(./ressources/halloween-deco.jpg);
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 76px;
+  background: -webkit-linear-gradient(#f60202, #c3d4d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  color: #fff;
+}
+#board {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7.5px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+.box {
+  display: flex;
+  height: 95px;
+  width: 95px;
+  border: 1px solid black;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(149, 72, 168), rgb(119, 137, 238));
+}
+.Kitty {
+  height: 100%;
+  width: 100%;
+  background-image: url(./ressources/Kitty.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.Spooky {
+  height: 100%;
+  width: 100%;
+  background-image: url(./ressources/Spooky.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#winner {
+  font-size: 50px;
+  color: green;
+  margin-bottom: 15px;
+}
+button {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+footer {
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  text-align: right;
+  color: rgb(159, 143, 143);
+  font-size: 12px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}
